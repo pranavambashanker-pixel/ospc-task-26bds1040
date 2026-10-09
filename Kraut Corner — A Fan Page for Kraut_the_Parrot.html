@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kraut Corner — A Fan Page for Kraut_the_Parrot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9f0ff;--surface:#ffffff;--ink:#14213d;--muted:#46557a;--line:#14213d;--shadow:#14213d;--accent:#2f6bff;--accent-ink:#ffffff;--sun:#ffd23f;--pop:#ff5d73;--mint:#2ec27e;--ok:#0f7a55;--bad:#c62839;--bo:#14213d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1530;--surface:#18244f;--ink:#f4f6ff;--muted:#b4c0e6;--line:#9db0f5;--shadow:#050914;--accent:#5b8cff;--ok:#3ddc97;--bad:#ff7b8a}}
+:root[data-theme="dark"]{--bg:#0d1530;--surface:#18244f;--ink:#f4f6ff;--muted:#b4c0e6;--line:#9db0f5;--shadow:#050914;--accent:#5b8cff;--ok:#3ddc97;--bad:#ff7b8a}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:500 17px/1.6 Nunito,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bagel Fat One",Nunito,system-ui,sans-serif;font-weight:400;line-height:1.05;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,7vw,4.8rem)}h2{font-size:clamp(1.8rem,4vw,2.6rem)}h3{font-size:1.35rem;line-height:1.2}
+p{margin:0 0 1em}a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:3px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.brand{font-family:"Bagel Fat One",Nunito,sans-serif;text-decoration:none;font-size:1.6rem;line-height:1}
+.brand span{color:var(--pop)}
+.links{display:flex;gap:6px}
+.links a{padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800;font-size:.98rem;border:3px solid transparent}
+.links a:hover{border-color:var(--line)}
+.links a[aria-current="page"]{background:var(--sun);color:#14213d;border-color:var(--bo)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:4px solid var(--pop);outline-offset:3px}
+.btn{display:inline-block;cursor:pointer;background:var(--accent);color:var(--accent-ink);font:800 1.05rem Nunito,sans-serif;padding:13px 26px;border-radius:999px;border:3px solid var(--bo);text-decoration:none;box-shadow:4px 4px 0 var(--bo);transition:transform .12s,box-shadow .12s}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--bo)}
+.btn:active:not(:disabled){transform:translate(3px,3px);box-shadow:1px 1px 0 var(--bo)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn.ghost{background:var(--surface);color:var(--ink);border-color:var(--bo)}
+.btn.sun{background:var(--sun);color:#14213d}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:32px;align-items:center;padding:64px 0 56px}
+.eyebrow{display:inline-block;font-weight:800;font-size:.95rem;background:var(--sun);color:#14213d;border:3px solid var(--bo);border-radius:999px;padding:4px 14px;margin-bottom:18px;transform:rotate(-2deg)}
+.lede{font-size:1.2rem;color:var(--muted);max-width:54ch;font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.balls{position:relative;min-height:300px}
+.ball{position:absolute;width:var(--s);aspect-ratio:1;border-radius:50%;border:4px solid var(--bo);background:var(--f);box-shadow:5px 5px 0 var(--bo);display:block}
+.ball i{position:absolute;top:34%;width:24%;aspect-ratio:1;background:#fff;border:3px solid var(--bo);border-radius:50%}
+.ball i:nth-child(1){left:20%}.ball i:nth-child(2){right:20%}
+.ball i::after{content:"";position:absolute;inset:26%;background:var(--bo);border-radius:50%}
+.b1{--f:linear-gradient(135deg,#ffd23f 0 42%,#2f6bff 0 58%,#ffd23f 0)}
+.b2{--f:linear-gradient(#2ec27e 0 38%,#ffd23f 0 62%,#ff5d73 0)}
+.b3{--f:radial-gradient(circle at 50% 78%,#ffd23f 0 20%,#2f6bff 21%)}
+.balls .b3{--s:210px;left:2%;top:6%}
+.balls .b1{--s:150px;right:0;top:0}
+.balls .b2{--s:130px;right:14%;bottom:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin:28px 0 56px}
+.card{background:var(--surface);border:3px solid var(--line);border-radius:24px;padding:24px;box-shadow:6px 6px 0 var(--shadow)}
+.card p{color:var(--muted);margin:0}
+.card .ball{position:relative;--s:64px;margin-bottom:16px;box-shadow:3px 3px 0 var(--bo);border-width:3px}
+.card .ball i{border-width:2px}
+.band{background:var(--accent);color:#fff;border:3px solid var(--bo);border-radius:32px;padding:40px 30px;margin-bottom:56px;box-shadow:8px 8px 0 var(--shadow)}
+.band p{max-width:56ch;font-weight:700}.band .btn{margin-top:8px}
+.page{padding:56px 0 72px}
+.opts{display:grid;gap:12px;margin:22px 0}
+.opt{text-align:left;background:var(--surface);color:var(--ink);border:3px solid var(--line);border-radius:18px;padding:14px 18px;font:700 1.02rem Nunito,sans-serif;cursor:pointer;box-shadow:4px 4px 0 var(--shadow);transition:transform .12s}
+.opt:hover:not(:disabled){transform:translate(-2px,-2px);border-color:var(--accent)}
+.opt:disabled{cursor:default;color:var(--ink)}
+.opt.right{background:var(--ok);color:#fff;border-color:var(--bo)}.opt.wrong{background:var(--bad);color:#fff;border-color:var(--bo)}
+.reveal{background:var(--surface);border:3px solid var(--line);border-radius:22px;padding:20px 22px;margin-top:22px;box-shadow:5px 5px 0 var(--shadow)}
+.reveal p{color:var(--muted)}
+form{display:grid;gap:18px;max-width:560px}
+label{display:grid;gap:6px;font-weight:800;font-size:.98rem}
+input,select,textarea{font:600 1rem Nunito,sans-serif;color:var(--ink);background:var(--surface);border:3px solid var(--line);border-radius:14px;padding:12px 14px;width:100%}
+textarea{min-height:120px;resize:vertical}
+.hint{font-weight:600;color:var(--muted);font-size:.88rem}
+.err{color:var(--bad);font-weight:700;font-size:.9rem;min-height:1.2em}
+.status{padding:14px 18px;border-radius:16px;border:3px solid var(--line);background:var(--surface);font-weight:700}
+.status.ok{border-color:var(--ok)}.status.bad{border-color:var(--bad)}
+.status:empty{display:none}
+footer{border-top:3px solid var(--line);background:var(--surface);padding:28px 0;color:var(--muted);font-size:.9rem;font-weight:600}
+.hp{position:absolute;left:-9999px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}.balls{min-height:250px;order:-1}.balls .b3{--s:160px}.balls .b1{--s:115px}.balls .b2{--s:100px}}
+@media (max-width:520px){.links a{padding:6px 10px;font-size:.88rem}.brand{font-size:1.25rem}}
+@media (prefers-reduced-motion:no-preference){.balls .ball{animation:drop .7s cubic-bezier(.3,1.6,.5,1) both}.balls .b1{animation-delay:.12s}.balls .b2{animation-delay:.24s}@keyframes drop{from{opacity:0;transform:translateY(-60px) scale(.8)}}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="brand" href="#/">Kraut<span>Corner</span></a>
+<div class="links"><a href="#/" data-r="home">Home</a><a href="#/lab" data-r="lab">Lab</a><a href="#/join" data-r="join">Join</a></div>
+</nav></div></header>
+
+<main id="main" class="wrap" tabindex="-1"></main>
+
+<footer><div class="wrap">Made by a fan, for fans. This isn’t an official site and isn’t connected to Kraut or his team. Video summaries are my own words.</div></footer>
+
+<script>
+(function(){
+var main=document.getElementById('main');
+var db=null,uid=null;
+/* SELF-HOSTING: paste your form endpoint here (e.g. a Formspree/Basin/Getform URL). Leave empty to use the claude.ai built-in database. */
+var FORM_ENDPOINT='';
+try{ if(window.claude&&claude.use){ claude.use('db').then(function(d){db=d;}).catch(function(){}); claude.use('user').then(function(u){return u&&u.id();}).then(function(i){uid=i;}).catch(function(){}); } }catch(e){}
+
+var pages={
+home:function(){return '<section class="hero"><div class="hero-text"><p class="eyebrow">A fan page for @Kraut_the_Parrot</p>'+
+'<h1>Why do countries turn out the way they do?</h1>'+
+'<p class="lede">Kraut makes long, well-researched animated video essays about geopolitics and history, using countryballs and diagrams to explain stuff that\u2019s normally buried in textbooks. This is my little fan corner for it.</p>'+
+'<div class="row"><a class="btn" href="#/lab">Try the Lab</a><a class="btn ghost" href="#/join">Join the fan list</a></div></div><div class="balls" aria-hidden="true"><span class="ball b3"><i></i><i></i></span><span class="ball b1"><i></i><i></i></span><span class="ball b2"><i></i><i></i></span></div></section>'+
+'<h2>Three things the channel is great at</h2><div class="grid">'+
+card('b3','Russia, explained properly','Videos on the origins of Russian authoritarianism and the ideology of Putin\u2019s Russia, looking at how state structures, imperial history and ideas shaped how it\u2019s governed today.')+
+card('b1','Against \u201cit\u2019s just culture\u201d','A critique of cultural determinism, arguing that culture alone doesn\u2019t decide a country\u2019s politics and that institutional development matters a lot more.')+
+card('b2','Europe, up close','Deep dives like A History of Hungary, Estonia: The Digital State and The Danube and Europe\u2019s Future, on state building, bureaucracy and alliances.')+
+'</div><div class="band"><h2>Quick brain workout</h2><p>The Lab has two short \u201cculture or institutions?\u201d questions. Pick your gut answer first, then see the reasoning. Takes a minute.</p><a class="btn sun" href="#/lab">Go to the Lab</a></div>';},
+lab:function(){return '<section class="page"><h2>Culture or institutions?</h2>'+
+'<p class="lede">Inspired by the debate Kraut covers in the cultural determinism video. These are classic examples people use in that argument, not summaries of the video itself.</p>'+
+'<div id="lab" aria-live="polite"></div></section>';},
+join:function(){return '<section class="page"><h2>Come hang out</h2>'+
+'<p class="lede">Drop your email for a small fan digest now and then. Or send a topic you\u2019d love to see covered, or your favourite video, I\u2019d love to read it.</p>'+
+'<form id="f" novalidate><label>Your name<input name="name" autocomplete="name" required><span class="err" data-for="name"></span></label>'+
+'<label>Email<input name="email" type="email" autocomplete="email" required><span class="err" data-for="email"></span></label>'+
+'<label>I\u2019m here to<select name="kind"><option>Get the fan digest</option><option>Suggest a video topic</option><option>Share a favourite video</option></select></label>'+
+'<label>Anything to add? <span class="hint">(optional, max 500 characters)</span><textarea name="msg" maxlength="500"></textarea></label>'+
+'<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">'+
+'<button class="btn" type="submit" id="go">Send</button><div id="st" role="status" aria-live="polite"></div></form></section>';}
+};
+function card(n,t,p){return '<div class="card"><span class="ball '+n+'"><i></i><i></i></span><h3>'+t+'</h3><p>'+p+'</p></div>';}
+
+function route(){
+  var r=(location.hash.replace('#/','')||'home'); if(!pages[r])r='home';
+  main.innerHTML=pages[r]();
+  document.querySelectorAll('.links a').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.r===r); if(a.dataset.r===r)a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');});
+  document.title=({home:'Home',lab:'The Lab',join:'Join'})[r]+' \u2014 Kraut Corner';
+  window.scrollTo(0,0);
+  if(r==='lab')initLab(); if(r==='join')initForm();
+}
+var QS=[
+{q:'North and South Korea share a language, history and traditions going back centuries. Today their economies are worlds apart. What explains it best?',
+ o:['Their cultures somehow drifted apart','The very different institutions set up after 1945','Pure luck'],a:1,
+ e:'After the split, each side built a totally different system for who holds power and how the economy runs. Same starting culture, very different outcomes, which is why people say institutions did the heavy lifting.'},
+{q:'East and West Germany were the same people with the same culture until 1949. West Germany ended up richer and freer. Why?',
+ o:['Different political and economic institutions','Western Germans were just more hardworking','Geography alone'],a:0,
+ e:'Same people, different rules: one side had open markets and competitive politics, the other had central planning and one-party rule. Culture isn\u2019t nothing, but it can\u2019t explain a gap that opens up so fast.'}
+];
+function initLab(){
+  var box=document.getElementById('lab'),i=0,score=0;
+  function show(){
+    if(i>=QS.length){
+      box.innerHTML='<div class="reveal"><h3>You got '+score+' out of '+QS.length+'.</h3><p>Either way, the real fun is the full argument. Go watch the video, then come tell me what you think.</p><div class="row"><button class="btn ghost" id="again">Start over</button><a class="btn" href="#/join">Join the fan list</a></div></div>';
+      document.getElementById('again').onclick=function(){i=0;score=0;show();};return;
+    }
+    var Q=QS[i];
+    box.innerHTML='<p class="hint">Question '+(i+1)+' of '+QS.length+'</p><h3>'+Q.q+'</h3><div class="opts" role="group" aria-label="Pick your answer">'+
+      Q.o.map(function(t,k){return '<button class="opt" data-i="'+k+'">'+t+'</button>';}).join('')+'</div><div id="out"></div>';
+    box.querySelector('.opts').addEventListener('click',function(e){
+      var b=e.target.closest('.opt'); if(!b)return; var k=+b.dataset.i;
+      this.querySelectorAll('.opt').forEach(function(o){o.disabled=true;if(+o.dataset.i===Q.a)o.classList.add('right');});
+      if(k!==Q.a)b.classList.add('wrong'); else score++;
+      var out=document.getElementById('out');
+      out.innerHTML='<div class="reveal" tabindex="-1"><h3>'+(k===Q.a?'Nice, you got it!':'Most people guess that, don\u2019t worry.')+'</h3><p>'+Q.e+'</p><button class="btn" id="nx">'+(i<QS.length-1?'Next question':'See result')+'</button></div>';
+      out.firstChild.focus();
+      document.getElementById('nx').onclick=function(){i++;show();};
+    });
+  }
+  show();
+}
+function initForm(){
+  var f=document.getElementById('f'),st=document.getElementById('st'),go=document.getElementById('go');
+  function say(t,c){st.className='status '+c;st.textContent=t;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f),name=(d.get('name')||'').trim(),email=(d.get('email')||'').trim(),ok=true;
+    f.querySelectorAll('.err').forEach(function(x){x.textContent='';});
+    if(!name){f.querySelector('[data-for=name]').textContent='Hey, we need your name!';ok=false;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){f.querySelector('[data-for=email]').textContent='That email doesn\u2019t look right, check it?';ok=false;}
+    if(!ok){f.querySelector('.err:not(:empty)').previousElementSibling.focus();return;}
+    if(d.get('website')){say('Thanks!','ok');return;}
+    if(FORM_ENDPOINT){
+      go.disabled=true;say('Sending\u2026','');
+      fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:name,email:email,kind:d.get('kind'),message:(d.get('msg')||'').trim().slice(0,500)})})
+      .then(function(r){if(!r.ok)throw 0;f.reset();say('You\u2019re in, '+name+'! Thanks for joining :)','ok');})
+      .catch(function(){say('Oops, that didn\u2019t go through. Try again in a bit?','bad');})
+      .then(function(){go.disabled=false;});
+      return;
+    }
+    if(!db||!uid){say('Sign-up needs you to be signed in to claude.ai to save. Open the page signed in and try again.','bad');return;}
+    go.disabled=true;say('Sending\u2026','');
+    db.collection('signups').doc(uid).set({name:name,email:email,kind:d.get('kind'),message:(d.get('msg')||'').trim().slice(0,500),at:new Date().toISOString()})
+    .then(function(){f.reset();say('You\u2019re in, '+name+'! Thanks for joining :)','ok');})
+    .catch(function(){say('Oops, that didn\u2019t go through. Try again in a bit?','bad');})
+    .then(function(){go.disabled=false;});
+  });
+}
+window.addEventListener('hashchange',route);route();
+})();
+</script>
+</body>
+</html>
